@@ -3,14 +3,13 @@ function printIndependence(countdown = 0, display = () => { }){
     let div = document.getElementById('root');
         let card = document.createElement('div');
         card.innerHTML = `<div class='card-wrapper'>
-            <h1>${countdown}</h1>
+            <h3>${countdown}</h3>
         </div>`
         div.appendChild(card);
     let val ="";
     if(display){
-        val = display();
+       display();
     }
-    console.log(val)
 }
 
 setTimeout(printIndependence(10,
@@ -23,16 +22,16 @@ setTimeout(printIndependence(10,
                             setTimeout(() => printIndependence(3,
                                 setTimeout(() => printIndependence(2,
                                     setTimeout(() => printIndependence(1, 
-                                        setTimeout(() => printIndependence("Happy Independence Day", ()=>{}), 2000)
-                                ),2000)
-                                ),1800)
-                            ),1600)
-                        ),1400)
-                    ),1200)
-                ),1000)
-            ),800)
-        ),600)
-    ),400)
+                                        setTimeout(() => printIndependence("Happy Independence Day", ()=>{}), 200)
+                                ),200)
+                                ),200)
+                            ),200)
+                        ),200)
+                    ),200)
+                ),200)
+            ),200)
+        ),200)
+    ),200)
 ),200)
 
 function print(){
