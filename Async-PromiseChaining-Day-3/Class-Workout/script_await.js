@@ -41,3 +41,32 @@ async function loadData(){
 }
 
 loadData()
+
+
+/*var req = new XMLHttpRequest();
+req.open("GET", "https://restcountries.com/v3.1/all");
+req.addEventListener('load', function (){
+  //console.log(this.response)
+  iterate(JSON.parse(this.response))
+});
+
+req.send()
+var col = document.querySelector('body div.container div.row div.col-sm-6.col-md-4.col-lg-4.col-xl-4');
+var card = document.querySelector('div.row div.col-sm-6.col-md-4.col-lg-4.col-xl-4 div.card');
+var cardHeader = document.querySelector('div.row div.col-sm-6.col-md-4.col-lg-4.col-xl-4 div.card div.card-header');
+var cardImg = document.querySelector('div.row div.col-sm-6.col-md-4.col-lg-4.col-xl-4 div.card img#image');
+var cardText = document.querySelector('div.row div.col-sm-6.col-md-4.col-lg-4.col-xl-4 div.card-body div.card-text');
+function iterate(data = []) {
+  let text = "";
+  let img1= "";
+  let capital = ""
+  for (let i = 0; i < data.length; i++) {
+    text += data[i].name.common + "<br>";
+    document.getElementById('title').innerHTML = text;
+    img1 += data[i].flags.png + "<br>";
+    capital += data[i].capital + "<br>";
+    document.getElementById('text').innerHTML = capital
+  }
+  document.getElementById('image').src = img1;
+  //console.log(data[i].name.common)
+}*/
