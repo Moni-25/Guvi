@@ -11,7 +11,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -20,7 +20,7 @@ h6,
 p {
   margin: 0px;
   text-align: start;
-}
+} */
 
 .logo {
   height: 6em;
@@ -58,7 +58,7 @@ p {
   color: #888;
 }
 
-.video-card {
+/*.video-card {
   width: 400px;
   height: 100px;
   border-radius: var(--card-border-radius);
@@ -99,4 +99,10 @@ p {
     font-weight: 400;
     color: black;
   }
+}*/
+
+.row-app{
+  display: flex;
+  gap: 10px;
+  margin-top: 0px;
 }

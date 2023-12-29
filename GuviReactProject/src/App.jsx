@@ -31,7 +31,6 @@ function App() {
     </>
   )
 }
-*/
 
 import "./App.css";
 import VideoCard from "./Components/VideoCard/VideoCard.jsx";
@@ -48,6 +47,73 @@ function App() {
       ))}
     </>
   );
-}
+}*/
 
+import "./App.css";
+import "./Components/PriceCard-Day2-React/PriceCard.css";
+import PriceCard from "./Components/PriceCard-Day2-React/PriceCard";
+
+function App() {
+  const data = [
+    { 
+      title: "Free", 
+      month: "0", 
+      isAvailable:{
+        unit: "Single Unit", 
+        storage: "50GB Storage",
+        project: "Unlimited Public Project",
+        access: "Community Access"
+      },
+      notAvailable:{
+        pro: "Unlimied Private Projects",
+        support: "Dedicated Phone Support",
+        domain: "Free Subdomain",
+        report: "Monthly Status Reports"
+      }
+    },
+    { 
+      title: "Plus", 
+      month: "9", 
+      isAvailable:{
+        unit: "Single Unit", 
+        storage: "50GB Storage",
+        project: "Unlimited Public Project",
+        access: "Community Access",
+        pro: "Unlimied Private Projects",
+        support: "Dedicated Phone Support",
+      },
+      notAvailable:{
+        domain: "Free Subdomain",
+        report: "Monthly Status Reports"
+      }
+    },
+    { 
+      title: "Pro", 
+      month: "49",
+      isAvailable:{
+        unit: "Single Unit", 
+        storage: "50GB Storage",
+        project: "Unlimited Public Project",
+        access: "Community Access",
+        pro: "Unlimied Private Projects",
+        support: "Dedicated Phone Support",
+        domain: "Free Subdomain",
+        report: "Monthly Status Reports"
+      }
+    }
+  ];
+  console.log(data.length)
+  return (
+    <>
+      <div className="container-app">
+        <div className="row-app">
+          {data.map((price, index) => (
+            <PriceCard price={price} key={`price-card-${index}`} />
+          ))
+          }
+        </div>
+      </div>
+    </>
+  );
+}
 export default App
