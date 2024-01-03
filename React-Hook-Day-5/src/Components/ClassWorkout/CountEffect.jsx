@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link, useParams } from "react-router-dom"
 
 export default function Counter(){
     //let count = 0;
@@ -31,11 +32,22 @@ export default function Counter(){
         console.log("Component Updated")
     }, [count])
 
+    //useParam - help us to get url param value
+    const param = useParams()
+    console.log(param)
+
     return(
         <div>
             <button onClick={() => {handleCount('decre')}}>-</button>
             <p>{count}</p>
             <button onClick={() => {handleCount('incre')}}>+</button>
+            <br></br>
+            <Link to="/Home/Hi Hello"> 
+                <a href="">Home</a>
+            </Link>
+            <br></br>
+            <Link to="/Login" href="">Photo</Link>
+            <h1>{param && param.id ? param.id : "Hello"}</h1>
         </div>
     )
 }
