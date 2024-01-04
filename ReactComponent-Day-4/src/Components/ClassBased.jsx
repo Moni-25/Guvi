@@ -26,7 +26,7 @@ class ClassBasedComponent extends React.Component{
         return(
             // <h1>{this.props.count.map((e,i) => <p key={`class-key-${i}`}>{e}</p>)}</h1>
             // <h1>{this.state.count}</h1>
-            <span style={{fontSize: "25px"}}>{this.state.count}</span>
+            <span style={{fontSize: "25px"}}>{this.props.count}</span>
         );
     }
 
