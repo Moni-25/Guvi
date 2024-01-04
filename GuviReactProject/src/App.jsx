@@ -30,15 +30,15 @@ function App() {
       </p>
     </>
   )
-}
-
+}*/
+/* For Video Card
 import "./App.css";
 import VideoCard from "./Components/VideoCard/VideoCard.jsx";
 
 function App() {
   const data = [
-    { name: "Leo", description: "Vijay's blockbuster movie" },
-    { name: "PS2", description: "Historical and Fantasy movie" },
+    { name: "Leo", description: "Vijay's blockbuster movie", featured: true, },
+    { name: "PS2", description: "Historical and Fantasy movie", featured: true, },
   ];
   return (
     <>
@@ -47,8 +47,9 @@ function App() {
       ))}
     </>
   );
-}*/
+}
 
+*/
 import "./App.css";
 import "./Components/PriceCard-Day2-React/PriceCard.css";
 import PriceCard from "./Components/PriceCard-Day2-React/PriceCard";
