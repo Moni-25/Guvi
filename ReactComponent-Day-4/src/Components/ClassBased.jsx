@@ -24,9 +24,9 @@ class ClassBasedComponent extends React.Component{
 
     render(){
         return(
-            <h1>{this.state.count.map((e,i) => <p key={`class-key-${i}`}>{e}</p>)}</h1>
+            //<h1>{this.props.count.map((e,i) => <p key={`class-key-${i}`}>{e}</p>)}</h1>  // For array value
             // <h1>{this.state.count}</h1>
-            // <span style={{fontSize: "25px"}}>{this.props.count}</span>
+             <span style={{fontSize: "25px"}}>{this.props.count}</span>
         );
     }
 
@@ -39,8 +39,8 @@ class ClassBasedComponent extends React.Component{
     static getDerivedStateFromProps(props, state) {  
         //console.log("work", props, state)
         // When ever you using spread operator that time only you have access state variable
-        return {...props} 
-        // return {props}
+        //return {...props} 
+         return {props}
     }
 
     componentWillUnmount()
