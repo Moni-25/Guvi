@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Counter from './Components/ClassWorkout/CountEffect'
+import Counter from './Components/ClassWorkout-Day-5-6/CountEffect'
 import Home from "./Pages-Router-Day5/Home/Home"
 import Login from './Pages-Router-Day5/Login/Login'
 

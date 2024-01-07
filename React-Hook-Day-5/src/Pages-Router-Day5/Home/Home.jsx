@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom"
-import Counter from "../../Components/ClassWorkout/CountEffect"
+import Counter from "../../Components/ClassWorkout-Day-5-6/CountEffect"
 
 export default function Home(){
     return(

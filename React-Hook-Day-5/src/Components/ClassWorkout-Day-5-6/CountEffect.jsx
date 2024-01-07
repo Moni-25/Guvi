@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
+import ParamAccess from "./param";
 
 export default function Counter(){
     //let count = 0;
@@ -47,7 +48,8 @@ export default function Counter(){
             </Link>
             <br></br>
             <Link to="/Login" href="">Photo</Link>
-            <h1>{param && param.id ? param.id : "Hello"}</h1>
+            {/* <ParamAccess/> */}
+            <h1>{param && <ParamAccess/> ? param.id : "Hello"}</h1>
         </div>
     )
 }
